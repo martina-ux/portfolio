@@ -361,7 +361,7 @@ body {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
+  border: 2.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -509,4 +509,285 @@ body {
   .home__img {
     width: 450px;
   }
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.l-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation Styles */
+.container__menu {
+  display: flex;
+}
+
+.container__list {
+  list-style: none;
+  display: flex;
+}
+
+.container__item {
+  margin-left: 20px;
+}
+
+.container__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Section Styles */
+.l-main {
+  padding: 20px;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* About Section */
+.about, .skills, .contact {
+  margin: 40px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .container__menu {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center; /* Center the menu on smaller screens */
+  }
+
+  .home {
+      flex-direction: column; /* Stack the content vertically */
+      text-align: center; /* Center text on smaller screens */
+  }
+
+  .home__img {
+      margin-top: 20px; /* Add space between text and image */
+  }
+
+  .skills__container {
+      display: block; /* Stack skills vertically */
+  }
+
+  .skills__data {
+      margin-bottom: 20px; /* Space between skill entries */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .container__item {
+      margin-left: 10px; /* Reduce spacing on very small screens */
+  }
+
+  .contact__form {
+      display: flex;
+      flex-direction: column; /* Stack form fields vertically */
+  }
+
+  .contact__input {
+      margin-bottom: 10px; /* Space between form fields */
+      width: 100%; /* Full width inputs */
+      padding: 10px; /* Padding for better touch experience */
+      border-radius: 5px; /* Rounded corners for inputs */
+      border: 1px solid #ccc; /* Border for inputs */
+  }
+
+  .contact__button {
+      padding: 10px; /* Padding for button */
+      border-radius: 5px; /* Rounded corners for button */
+      background-color: #333; /* Button background color */
+      color: white; /* Button text color */
+      border: none; /* Remove border */
+      cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  .contact__button:hover {
+      background-color: #555; 
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.l-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__menu {
+  display: flex;
+}
+
+.container__list {
+  list-style: none;
+  display: flex;
+}
+
+.container__item {
+  margin-left: 20px;
+}
+
+.container__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; 
+  transition: background-color 0.3s; 
+}
+
+.container__link:hover {
+  background-color: #555; 
+  border-radius: 5px; 
+}
+
+.l-main {
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .container__menu {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center; 
+  }
+
+  .container__list {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .container__item {
+      margin-left: 0; 
+      margin-bottom: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container__item {
+      margin-left: 0; 
+  }
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.l-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Menu Bar Styles */
+.menu-bar {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer; /* Change cursor to pointer for clickable */
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+  display: none; /* Hide the menu by default */
+  background-color: #333;
+  position: absolute; /* Position it absolutely */
+  width: 100%; /* Full width */
+}
+
+.container__list {
+  list-style: none;
+}
+
+.container__item {
+  margin: 10px 0; /* Space between items */
+}
+
+.container__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Add padding for clickable area */
+  display: block; /* Make the entire area clickable */
+}
+
+.container__link:hover {
+  background-color: #555; /* Change background on hover */
+}
+
+/* Main Section Styles */
+.l-main {
+  padding: 20px;
+}
+
+/* Section Styles */
+.section {
+  margin: 40px 0; /* Space between sections */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
